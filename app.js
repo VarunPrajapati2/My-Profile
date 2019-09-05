@@ -27,6 +27,6 @@ app.use(function (req, res, next) {
   });
  
 //serve this page on localhost 
-app.listen('port',(req,res)=>{
-  console.log('server is running on port'+port);
+app.listen(port,(req,res)=>{
+  console.log('server is running on port  '+port)
 });
