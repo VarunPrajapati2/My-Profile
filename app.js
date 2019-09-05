@@ -2,11 +2,13 @@ var express = require('express');
 var exphbs = require('express-handlebars');
 var path =require('path');
 
+
 var app=express();
 
+const port=process.env.PORT || 8080
 
 //set handlebars Engine
-app.engine('handlebars',exphbs());
+app.engine('handlebars',exphbs({defaultLayout:'main'}));
 app.set('view engine','handlebars');
 
 //static file
@@ -23,8 +25,8 @@ app.get('/',(request,response)=>{
 app.use(function (req, res, next) {
     res.status(404).render("404page");
   });
-
+ 
 //serve this page on localhost 
-app.listen('8080',()=>{
-  console.log('server is running on port 8080');
+app.listen('port',(req,res)=>{
+  console.log('server is running on port'+port);
 });
