@@ -4,7 +4,7 @@
   "description": "\"My e-Profile\"",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node app.js"
   },
   "author": "Varun Kumar",
   "license": "ISC",
