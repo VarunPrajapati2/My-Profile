@@ -66,7 +66,7 @@ input[type="submit"]:hover {
 h1,
 h2,
 h3,
-h4,
+/* h4-changes */
 h5,
 h6 {
     margin: 0;
@@ -74,13 +74,18 @@ h6 {
     color: #323648;
 }
 
+h4{
+    color:#fff
+}
+
+
 p {
     margin: 0;
     padding: 0;
     font-size: 16px;
     letter-spacing: 1px;
     line-height: 1.9;
-    color: #fff;
+    color: #6c757d;
 }
 
 ul,
